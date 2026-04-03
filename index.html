@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wedding Seating Chart</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page">
+    <div class="card">
+      <h1>Wedding Seating Chart</h1>
+      <p class="subtitle">Search for your name to find your table.</p>
+
+      <div class="search-box">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Enter first name, last name, or full name"
+        />
+        <button id="searchButton">Search</button>
+      </div>
+
+      <div id="result" class="result hidden"></div>
+
+      <div class="guest-list-section">
+        <h2>Sample Guest List</h2>
+        <ul id="guestList"></ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
