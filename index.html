@@ -23,9 +23,28 @@
 
       <div id="result" class="result hidden"></div>
 
-      <div class="guest-list-section">
-        <h2>Sample Guest List</h2>
+      <div class="admin-toggle">
+        <button id="adminToggleButton" type="button">Manage guest list</button>
+      </div>
+
+      <div id="adminSection" class="admin-section hidden">
+        <h2>Add / Manage Guests</h2>
+        <p class="admin-note">
+          Names entered here are saved only in this browser. Add every guest below.
+        </p>
+
+        <form id="addGuestForm" class="add-guest-form">
+          <input type="text" id="firstNameInput" placeholder="First name" required />
+          <input type="text" id="lastNameInput" placeholder="Last name" required />
+          <input type="text" id="tableInput" placeholder="Table (e.g. Table 3)" required />
+          <button type="submit">Add Guest</button>
+        </form>
+
         <ul id="guestList"></ul>
+
+        <button id="clearAllButton" type="button" class="clear-button">
+          Clear all guests
+        </button>
       </div>
     </div>
   </div>
