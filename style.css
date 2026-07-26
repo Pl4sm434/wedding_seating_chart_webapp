@@ -91,22 +91,93 @@ button:hover {
   display: none;
 }
 
-.guest-list-section {
-  margin-top: 32px;
+.admin-toggle {
+  margin-top: 24px;
+  text-align: center;
 }
 
-.guest-list-section h2 {
+.admin-toggle button {
+  background: transparent;
+  color: #6e8b6b;
+  border: 1px solid #cfd8cc;
+  font-size: 14px;
+  padding: 10px 16px;
+}
+
+.admin-toggle button:hover {
+  background: #f2f6f1;
+}
+
+.admin-section {
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid #e2e8e0;
+}
+
+.admin-section h2 {
   font-size: 20px;
-  margin-bottom: 12px;
+  margin-bottom: 4px;
+}
+
+.admin-note {
+  color: #666;
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.add-guest-form {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.add-guest-form input {
+  flex: 1;
+  min-width: 140px;
+}
+
+.add-guest-form button {
+  flex: 0 0 auto;
 }
 
 #guestList {
-  padding-left: 20px;
+  list-style: none;
+  padding-left: 0;
   color: #444;
 }
 
 #guestList li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 12px;
   margin-bottom: 6px;
+  background: #f7f9f6;
+  border-radius: 8px;
+}
+
+.remove-guest-button {
+  background: #c96b6b;
+  padding: 6px 12px;
+  font-size: 13px;
+}
+
+.remove-guest-button:hover {
+  background: #b25454;
+}
+
+.clear-button {
+  background: transparent;
+  color: #8a2d2d;
+  border: 1px solid #e5bcbc;
+  margin-top: 4px;
+}
+
+.clear-button:hover {
+  background: #fff1f1;
 }
 
 @media (max-width: 600px) {
